@@ -1,8 +1,5 @@
 .amount-container {
-  margin-top: 5em;
-  height: 80px;
   margin: auto;
-  width: 480px;
   padding: 3em;
   border: 1px solid #707072;
   box-sizing: border-box;
@@ -10,6 +7,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 63px;
+
+  /* position: absolute; */
+  width: 480px;
+  height: 80px;
 }
 
 .bar-container {
@@ -20,12 +22,26 @@
   padding: 3em;
 }
 
+.error-container {
+  margin: auto;
+  height: 40px;
+}
+
+.error-message {
+  text-align: center;
+  color: #FC6A4A;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin-top: 8px;
+}
+
 .bar-slider-container {
-  margin-top: 5em;
+  /* margin-top: 5em; */
   margin: auto;
   width: 25%;
-  border: 3px solid red;
-  padding: 3em;
+  /* border: 3px solid red; */
+  padding: 1em;
 }
 
 .bar-slider {

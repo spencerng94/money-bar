@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import Amount from '../Amount.jsx';
-
+import Error from '../Error.jsx';
 
 const BarSlider = ({
     initialAmount, 
@@ -17,6 +17,7 @@ const BarSlider = ({
     return (
         <div>
             <Amount amount={amount}></Amount>
+            <Error ></Error>
             <div className="bar-slider-container">
                 <div className="bar-slider">
                     <input 
