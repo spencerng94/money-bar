@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# shared folder files
+
+../composer.json
+../composer.lock
+../magic-potion/
+../vendor/
