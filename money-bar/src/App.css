@@ -24,7 +24,7 @@
 
 .error-container {
   margin: auto;
-  height: 40px;
+  height: 20px;
 }
 
 .error-message {
@@ -94,13 +94,19 @@
 
 .limits-container {
   display: flex;
+  width: 352px;
   justify-content: space-between;
 }
 
 .minimum {
   font-size: 13px;
+  color: #6E6E6E;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
 }
 
 .maximum {
   font-size: 13px;
+  color: #6E6E6E;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }

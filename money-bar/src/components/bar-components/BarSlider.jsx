@@ -9,6 +9,7 @@ const BarSlider = ({
 }) => {
 
     const [ amount, setAmount ] = useState(initialAmount)
+    const step = 2000;
     const handleChange = event => {
         setAmount(event.target.value)
         console.log(event.target.value, 'line 13')
@@ -25,13 +26,14 @@ const BarSlider = ({
                         className="slider"
                         min={minAmount}
                         max={maxAmount}
+                        step={step}
                         value={amount}
                         onChange={handleChange}
                     />
                 </div>
                 <div className="limits-container">
-                    <div className="minimum">10000</div>
-                    <div className="maximum">30000</div>
+                    <div className="minimum">$10000</div>
+                    <div className="maximum">$30000</div>
                 </div>
             </div>
         </div>
