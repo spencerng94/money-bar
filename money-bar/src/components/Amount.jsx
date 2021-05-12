@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Amount = () => {
+const Amount = (props) => {
+
+    const { amount } = props;
 
     return (
-        <div>
-            This is amount
+        <div className="amount-container">
+            <div className="amount">
+                ${amount}
+            </div>
         </div>
     )
 }
