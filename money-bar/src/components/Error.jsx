@@ -1,12 +1,21 @@
 import React from 'react';
 
-const Error = () => {
+const Error = (props) => {
+    let { errorPresent } = props;
 
-    return(<div className="error-container">
-        <div className="error-message">
-            Please enter an amount between $10,000 and $30,000
+    if (errorPresent) {
+        return(<div className="error-container">
+            <div className="error-message">
+                Please enter an amount between $10,000 and $30,000
+            </div>
+        </div>)
+    } else {
+        return(
+            <div className="noerror-container">
         </div>
-    </div>)
+        )
+    }
+
 }
 
 export default Error;

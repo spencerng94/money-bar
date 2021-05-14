@@ -1,24 +1,22 @@
-import React, { useState} from 'react';
-import Amount from '../Amount.jsx';
-import Error from '../Error.jsx';
+import React, { useState } from 'react';
 
 const BarSlider = ({
     initialAmount, 
     minAmount, 
-    maxAmount
+    maxAmount,
+    amount,
+    setAmount
 }) => {
-
-    const [ amount, setAmount ] = useState(initialAmount)
+    // let { amount, setAmount } = props;
+    console.log(amount, 'line 9')
     const step = 2000;
+
     const handleChange = event => {
         setAmount(event.target.value)
         console.log(event.target.value, 'line 13')
     }
-
     return (
         <div>
-            <Amount amount={amount}></Amount>
-            <Error ></Error>
             <div className="bar-slider-container">
                 <div className="bar-slider">
                     <input 

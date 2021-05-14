@@ -26,6 +26,10 @@
   margin: auto;
   height: 40px;
 }
+.noerror-container {
+  margin: auto;
+  height: 24px;
+}
 
 .error-message {
   text-align: center;
@@ -54,6 +58,14 @@
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 48px;
   /* text-align: center; */
+}
+
+input {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    background: transparent;
+    border: transparent;
 }
 
 .slider {
